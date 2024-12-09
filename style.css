@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url(sh/gotham_black.otf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    margin: 0px 260px;
+}
+
+
+
+.header-line {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-logo {
+    margin-right: 320px;
+}
+
+.nav-item {
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: 400;
+    font-family: "Lato", serif;
+    margin-right: 50px;
+    transition: color 0.3s linear;
+}
+
+.nav-item:hover {
+    color: orange;
+}
+
+.container-banner {
+    width: 1920px;
+    height: 589px;
+    background-color: #709dca;
+    background-size: cover;
+}
+
+.full-title {
+    padding-top: 100px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 35px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "Gotham";
+    text-align: center;
+}
+
+.banner-podtitle {
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: "Lato", serif;
+    text-align: center;
+}
+
+.send-contact {
+    margin-top: 30px;
+    margin-left: 310px;
+    display: flex;
+}
+
+.input-name {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    height: 46px;
+    background: url(photos/Banner/1.png) no-repeat;
+    background-position: 10px center;
+    padding-left: 30px;
+    /* Отступ слева для текста */
+    padding-top: 10px;
+}
+
+.input-email {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    height: 46px;
+    background: url(photos/Banner/3.png) no-repeat;
+    background-position: 10px center;
+    padding-left: 30px;
+    /* Отступ слева для текста */
+    padding-top: 10px;
+}
+
+.input-tel {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    height: 46px;
+    background: url(photos/Banner/2.png) no-repeat;
+    background-position: 10px center;
+    padding-left: 30px;
+    /* Отступ слева для текста */
+    padding-top: 10px;
+}
+
+
+.button-send {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 300px;
+    height: 66px;
+}

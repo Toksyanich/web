@@ -1,32 +1,44 @@
 @font-face {
     font-family: 'Gotham';
     src: url(sh/gotham_black.otf) format('woff2');
+    /* Убедитесь, что путь к шрифту верный */
     font-weight: normal;
     font-style: normal;
 }
 
-
-.body,
+body,
 html {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    /* Установите базовый шрифт для всего сайта */
 }
 
 .container {
-    margin: 0px 260px;
+    max-width: 1400px;
+    /* Ограничиваем максимальную ширину контейнера */
+    margin: 0 auto;
+    /* Центрируем контейнер */
+    padding: 0 20px;
+    /* Добавляем отступы по бокам */
 }
 
-
-
 .header-line {
-    margin: 30px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    /* Используем space-between для равномерного распределения элементов */
+    padding: 30px 0;
+    /* Используем padding вместо margin */
 }
 
 .header-logo {
-    margin-right: 320px;
+    /* Убираем margin-right,  justify-content: space-between сделает все за нас */
+}
+
+.nav {
+    /* обертка для навигации */
+    display: flex;
 }
 
 .nav-item {
@@ -35,101 +47,149 @@ html {
     text-transform: uppercase;
     color: gray;
     font-weight: 400;
-    font-family: "Lato", serif;
-    margin-right: 50px;
+    margin-right: 30px;
+    /* Уменьшаем margin */
     transition: color 0.3s linear;
 }
 
-.nav-item:hover {
-    color: orange;
-}
 
 .container-banner {
-    width: 1920px;
-    height: 589px;
+    width: 100%;
+    /* Занимаем всю ширину */
+    height: auto;
+    /*  Высота будет подстраиваться под содержимое */
+    min-height: 500px;
+    /* Минимальная высота */
     background-color: #709dca;
     background-size: cover;
+    display: flex;
+    /* Используем flexbox для центрирования */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* Выравниваем элементы по вертикали */
 }
 
 .full-title {
-    padding-top: 100px;
+    padding: 5% 0;
+    /* Процентное значение для padding */
+    text-align: center;
+    /* Центрируем текст */
 }
 
 .banner-title {
     color: white;
-    font-size: 35px;
-    line-height: 24px;
+    font-size: 2.5rem;
+    /* Используем rem для шрифта */
+    line-height: 1.2;
     text-transform: uppercase;
     font-weight: 800;
-    font-family: "Gotham";
-    text-align: center;
+    font-family: "Gotham", sans-serif;
+    /* Добавляем sans-serif на случай, если Gotham не загрузится */
 }
 
 .banner-podtitle {
-    padding-top: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 1.5rem;
+    /* Используем rem для шрифта */
     font-weight: 100;
-    font-family: "Lato", serif;
-    text-align: center;
+    margin-top: 20px;
+    /* Используем margin вместо padding-top */
 }
 
 .send-contact {
-    margin-top: 30px;
-    margin-left: 310px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Настройте minmax по необходимости */
+    gap: 20px;
+    /* Пробел между элементами */
+    justify-content: space-between;
+    /* Или center, если нужно центрировать */
+    width: 65%;
 }
 
-.input-name {
-    padding: 10px;
+
+.input-name,
+.input-email,
+.input-tel,
+.button-send {
+    width: 100%;
+    height: 60px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 10px;
-    width: 300px;
-    height: 46px;
-    background: url(photos/Banner/1.png) no-repeat;
+    padding: 10px;
     background-position: 10px center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    /* Убираем margin */
+}
+
+
+
+.input-name {
+    background-image: url(photos/Banner/1.png);
+    /* Используем background-image */
     padding-left: 30px;
-    /* Отступ слева для текста */
-    padding-top: 10px;
 }
 
 .input-email {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    width: 300px;
-    height: 46px;
-    background: url(photos/Banner/3.png) no-repeat;
-    background-position: 10px center;
+    background-image: url(photos/Banner/3.png);
+    /* Используем background-image */
     padding-left: 30px;
-    /* Отступ слева для текста */
-    padding-top: 10px;
 }
 
 .input-tel {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
-    width: 300px;
-    height: 46px;
-    background: url(photos/Banner/2.png) no-repeat;
-    background-position: 10px center;
+    background-image: url(photos/Banner/2.png);
+    /* Используем background-image */
     padding-left: 30px;
-    /* Отступ слева для текста */
-    padding-top: 10px;
 }
-
 
 .button-send {
     background-color: #FFA500;
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px 20px;
     cursor: pointer;
-    width: 300px;
-    height: 66px;
+    /* Фиксированная высота кнопки */
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+}
+
+
+/* Медиа-запросы для разных размеров экрана */
+@media (max-width: 768px) {
+    .header-line {
+        flex-direction: column;
+        /* Располагаем элементы header-line друг под другом */
+        align-items: center;
+    }
+
+    .nav {
+        margin-top: 20px;
+        flex-direction: column;
+        /* Меню в столбик на мобильных */
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        /* Отступы сверху/снизу для элементов меню на мобильных */
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-podtitle {
+        font-size: 1.2rem;
+    }
+
+    .send-contact {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 колонки на мобильных */
+        /* Или 1fr для одной колонки */
+    }
+
+
 }

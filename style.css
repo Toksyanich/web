@@ -32,9 +32,6 @@ html {
     /* Используем padding вместо margin */
 }
 
-.header-logo {
-    /* Убираем margin-right,  justify-content: space-between сделает все за нас */
-}
 
 .nav {
     /* обертка для навигации */
@@ -62,16 +59,11 @@ html {
     /* Минимальная высота */
     background-color: #709dca;
     background-size: cover;
-    display: flex;
-    /* Используем flexbox для центрирования */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* Выравниваем элементы по вертикали */
 }
 
 .full-title {
-    padding: 5% 0;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
     /* Процентное значение для padding */
     text-align: center;
     /* Центрируем текст */
@@ -93,7 +85,7 @@ html {
     font-size: 1.5rem;
     /* Используем rem для шрифта */
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 10px;
     /* Используем margin вместо padding-top */
 }
 
@@ -106,6 +98,7 @@ html {
     justify-content: space-between;
     /* Или center, если нужно центрировать */
     width: 65%;
+    margin-left: 17%;
 }
 
 
@@ -156,6 +149,69 @@ html {
     /* Отступы внутри кнопки */
 }
 
+.laptop-container {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.laptop-frame {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    margin-top: 5.8%;
+}
+
+.laptop-screen {
+    width: 68%;
+    height: auto;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 17%;
+}
+
+.service {
+    margin-top: 10%;
+}
+
+.service-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #394b50;
+    /* Увеличиваем размер шрифта для заголовка */
+    font-weight: bold;
+    /* Делаем заголовок жирным */
+}
+
+.service-podtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    /* Увеличиваем размер шрифта для подзаголовка */
+    color: gray;
+    /* Устанавливаем цвет для подзаголовка */
+}
+
+.container-service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 15%;
+}
+
+.container-service div {
+    word-wrap: break-word;
+    /* Позволяет переносить длинные слова */
+    overflow-wrap: break-word;
+    /* Современный аналог word-wrap */
+    /* Дополнительные стили для улучшения отображения */
+    padding: 10px;
+    /* Отступы внутри блока */
+    background-color: #f9f9f9;
+    /* Фоновый цвет для визуального разделения */
+    border-radius: 5px;
+    /* Закругленные углы */
+}
 
 /* Медиа-запросы для разных размеров экрана */
 @media (max-width: 768px) {

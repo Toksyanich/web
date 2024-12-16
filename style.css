@@ -182,6 +182,7 @@ html {
     /* Увеличиваем размер шрифта для заголовка */
     font-weight: bold;
     /* Делаем заголовок жирным */
+    text-transform: uppercase;
 }
 
 .service-podtitle {
@@ -196,7 +197,8 @@ html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin: 0 15%;
+    margin: 0 17%;
+    padding-top: 2%;
 }
 
 .container-service div {
@@ -207,10 +209,417 @@ html {
     /* Дополнительные стили для улучшения отображения */
     padding: 10px;
     /* Отступы внутри блока */
-    background-color: #f9f9f9;
+    background-color: transparent;
     /* Фоновый цвет для визуального разделения */
     border-radius: 5px;
     /* Закругленные углы */
+    position: relative;
+    padding-left: 70px;
+}
+
+
+
+.icon {
+    position: absolute;
+    top: 21%;
+    /* Расположение сверху */
+    left: 1px;
+    /* Расположение слева */
+
+}
+
+/* ABOUT US-------------------------------------------------*/
+
+.about-us {
+    margin-top: 10%;
+    display: flex;
+}
+
+.img-block {
+    flex: 1;
+    /* Занимает половину ширины */
+}
+
+.img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Изображение подстраивается под размер */
+}
+
+.text-block {
+    flex: 1;
+    /* Занимает вторую половину ширины */
+    background-color: #ffc155;
+    /* Оранжевый цвет */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    /* Выровняли текст по левому краю */
+    padding-left: 5%;
+}
+
+.heh {
+    font-size: 2rem;
+}
+
+.text-block p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    align-items: flex-start;
+}
+
+.text-block button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffc155;
+    border: 1px solid #918a8a;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chosps {
+    background-color: #f0f4f8;
+}
+
+.choos-zagolovok {
+    padding-top: 7%;
+}
+
+.choos-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #394b50;
+    /* Увеличиваем размер шрифта для заголовка */
+    font-weight: bold;
+    /* Делаем заголовок жирным */
+    text-transform: uppercase;
+}
+
+.choos-podtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    /* Увеличиваем размер шрифта для подзаголовка */
+    color: gray;
+    /* Устанавливаем цвет для подзаголовка */
+}
+
+.pricing-container {
+    margin-top: 5%;
+    display: flex;
+    margin-left: 10%;
+    /* Распределяет блоки равномерно */
+    /* Цвет фона для контейнера */
+}
+
+.pricing-card {
+    background-color: white;
+    /* Цвет фона для карточки */
+    border: 1px solid #ccc;
+    /* Рамка */
+    border-radius: 8px;
+    /* Закругленные углы */
+    text-align: center;
+    /* Центрируем текст */
+    width: 30%;
+    /* Ширина карточки */
+}
+
+.premium {
+    background-color: #709dca;
+    /* Цвет для премиум плана */
+    color: white;
+    /* Цвет текста для премиум плана */
+}
+
+.price {
+    font-size: 2rem;
+    /* Размер шрифта для цены */
+    font-weight: bold;
+    /* Жирный шрифт */
+}
+
+.price2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #f4a327;
+}
+
+.get-started {
+    background-color: #f4a327;
+    /* Цвет кнопки */
+    color: white;
+    /* Цвет текста кнопки */
+    border: none;
+    /* Убираем рамку */
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+    cursor: pointer;
+    /* Указатель при наведении */
+    border-radius: 5px;
+    /* Закругленные углы кнопки */
+}
+
+
+.feature {
+    margin: 20px 0;
+    /* Отступы между элементами */
+    font-size: 1rem;
+    /* Размер шрифта */
+    color: #d4cfcf;
+    /* Цвет текста */
+    border-top: 1px solid #e3e1e1;
+}
+
+
+.per1 {
+    color: #d4cfcf;
+}
+
+.bs {
+    color: gray;
+}
+
+.how-work {
+    margin-top: 5%;
+}
+
+.howw-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #394b50;
+    /* Увеличиваем размер шрифта для заголовка */
+    font-weight: bold;
+    /* Делаем заголовок жирным */
+    text-transform: uppercase;
+}
+
+.howw-podtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    /* Увеличиваем размер шрифта для подзаголовка */
+    color: gray;
+    /* Устанавливаем цвет для подзаголовка */
+}
+
+.photo-nice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-norm {
+    display: flex;
+    margin: 0 17%;
+}
+
+.text1 {
+    padding-right: 5%;
+}
+
+.step {
+    text-align: center;
+}
+
+.button-start {
+    background-color: #ffc155;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Фиксированная высота кнопки */
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+    width: 20%;
+    height: 20%;
+}
+
+.buttons {
+    margin-top: 3%;
+    margin-left: 43%;
+}
+
+.happy-clients {
+    margin-top: 5%;
+    background-color: #ffc155;
+}
+
+.happy-zagolovok {
+    text-align: center;
+    /* Центрируем текст */
+    /* Оранжевый фон */
+    padding-top: 5%;
+    padding-bottom: 4%;
+    /* Отступы сверху/снизу и по бокам */
+}
+
+
+
+.happy-title {
+    font-size: 2.5rem;
+    /* Размер шрифта для заголовка */
+    font-weight: bold;
+    /* Жирный шрифт */
+    color: white;
+    /* Цвет текста */
+    margin: 0;
+    /* Убираем отступы */
+}
+
+.happy-podtitle {
+    font-size: 1.2rem;
+    /* Размер шрифта для подзаголовка */
+    color: white;
+    /* Цвет текста */
+    margin-top: 10px;
+    /* Отступ сверху */
+}
+
+.container-fg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fg1 {
+    background-color: white;
+    width: 30%;
+    margin: 1% 1%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.imgnado {
+    position: absolute;
+    margin-top: 2%;
+    left: 20px;
+}
+
+.kruto,
+.kruto2 {
+    display: inline-block;
+    /* Элементы будут располагаться в строку */
+    margin-right: 5px;
+    /* Отступ между элементами */
+}
+
+/* Цвета для текста */
+.kruto {
+    color: #f89256;
+    /* Цвет для первого элемента */
+}
+
+.kruto2 {
+    color: #99a9ae;
+    /* Цвет для второго элемента */
+}
+
+.new-zagolovok {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.new-title {
+    font-size: 2.5rem;
+    /* Размер шрифта для заголовка */
+    font-weight: bold;
+    /* Жирный шрифт */
+    color: #394b50;
+    /* Цвет текста */
+    margin: 0;
+    /* Убираем отступы */
+    text-transform: uppercase;
+}
+
+.new-podtitle {
+    font-size: 1.2rem;
+    /* Размер шрифта для подзаголовка */
+    color: #9aa4a6;
+    /* Цвет текста */
+    margin-top: 10px;
+    /* Отступ сверху */
+}
+
+
+.inputs-data {
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Настройте minmax по необходимости */
+    gap: 20px;
+    /* Пробел между элементами */
+    justify-content: space-between;
+    /* Или center, если нужно центрировать */
+    width: 65%;
+    margin-left: 17%;
+}
+
+
+.input-name1,
+.input-email1,
+.sub {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    /* Убираем margin */
+}
+
+
+
+.input-name1 {
+    background-image: url(photos/Banner/1.png);
+    /* Используем background-image */
+    padding-left: 30px;
+}
+
+.input-email1 {
+    background-image: url(photos/Banner/3.png);
+    /* Используем background-image */
+    padding-left: 30px;
+}
+
+
+
+.sub {
+    background-color: #ffbb42;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Фиксированная высота кнопки */
+    padding: 10px 20px;
+    /* Отступы внутри кнопки */
+}
+
+.mapp {
+    position: relative;
+    margin-top: 3%;
+    justify-content: center;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    /* Горизонтальное выравнивание по центру */
+    align-items: center;
+    /* Вертикальное выравнивание по центру */
+    height: 100%;
+    /* Контейнер занимает всю высоту экрана */
+}
+
+.map1 {
+    position: absolute;
 }
 
 /* Медиа-запросы для разных размеров экрана */
